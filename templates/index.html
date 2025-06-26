@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Advanced Calculator</h1>
+        <form method="post">
+            <input type="text" name="expression" value="{{ expression }}" placeholder="e.g. sqrt(25) + 4^2" required>
+            <button type="submit">Calculate</button>
+        </form>
+
+        {% if result is not none %}
+            <div class="result">Result: {{ result }}</div>
+        {% endif %}
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <div class="help">
+            <h3>Supported Functions</h3>
+            <ul>
+                <li><b>+ - * / ^</b> (power)</li>
+                <li><b>sqrt(x)</b>, <b>sin(x)</b>, <b>cos(x)</b>, <b>tan(x)</b></li>
+                <li><b>log(x)</b> (log base 10), <b>ln(x)</b> (natural log)</li>
+                <li><b>pi</b>, <b>e</b> constants</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
