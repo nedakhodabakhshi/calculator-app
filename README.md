@@ -1,52 +1,44 @@
-# 🧮 Advanced Calculator App (Flask + Docker)
+# 🧮 Advanced Calculator Web App (Flask + Docker)
 
-A powerful web-based calculator built with Python and Flask. Supports basic math, powers, trigonometry, square roots, logarithms, and more!
+A professional web-based **Advanced Calculator** built using **Python (Flask)** and **Docker**, supporting basic and scientific operations. Clean UI, mobile-friendly, and easy to deploy.
 
-## 🔧 Features
-- ✅ Addition, subtraction, multiplication, division
-- ✅ Square root: `sqrt(x)`
-- ✅ Powers: `2^3`
-- ✅ Trigonometry: `sin(x)`, `cos(x)`, `tan(x)`
-- ✅ Logs: `log(x)` (base 10), `ln(x)`
-- ✅ Constants: `pi`, `e`
-- ✅ Error handling and clean UI
+---
 
-## 🚀 Getting Started
+## 🚀 Features
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/calculator-app.git
-cd calculator-app
-2. Build the Docker image
-bash
-Copy
-Edit
-docker build -t calculator-app .
-3. Run the container
-bash
-Copy
-Edit
-docker run -d -p 5000:5000 calculator-app
-4. Open in browser
-Visit: http://localhost:5000
+✅ Basic arithmetic: `+`, `-`, `*`, `/`, `^`  
+✅ Power and root: `2^3`, `sqrt(25)`  
+✅ Trigonometry: `sin(x)`, `cos(x)`, `tan(x)`  
+✅ Logarithms: `log(x)` (base 10), `ln(x)` (natural log)  
+✅ Constants: `pi`, `e`  
+✅ User-friendly math expressions  
+✅ Input validation and error handling  
+✅ Styled interface with HTML/CSS  
+✅ Dockerized for easy deployment
 
-🛠 Local Development (Optional)
-bash
-Copy
-Edit
-pip install flask
-python app.py
-📁 Project Structure
-cpp
-Copy
-Edit
+---
+
+## 📁 Project Structure
+
 calculator-app/
 ├── app.py
 ├── templates/
-│   └── index.html
+│ └── index.html
 ├── static/
-│   └── style.css
+│ └── style.css
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
+
+---
+
+🐳 Docker Deployment
+1. Build the Docker image
+
+docker build -t calculator-app .
+
+2. Run the Docker container
+docker run -d -p 5000:5000 calculator-app
+
+Visit: http://localhost:5000
 
