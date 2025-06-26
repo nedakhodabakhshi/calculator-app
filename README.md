@@ -17,4 +17,36 @@ A powerful web-based calculator built with Python and Flask. Supports basic math
 ```bash
 git clone https://github.com/yourusername/calculator-app.git
 cd calculator-app
+2. Build the Docker image
+bash
+Copy
+Edit
+docker build -t calculator-app .
+3. Run the container
+bash
+Copy
+Edit
+docker run -d -p 5000:5000 calculator-app
+4. Open in browser
+Visit: http://localhost:5000
+
+🛠 Local Development (Optional)
+bash
+Copy
+Edit
+pip install flask
+python app.py
+📁 Project Structure
+cpp
+Copy
+Edit
+calculator-app/
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── requirements.txt
+├── Dockerfile
+└── README.md
 
